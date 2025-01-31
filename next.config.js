@@ -9,7 +9,7 @@ const nextConfig = {
       },
     ],
   },
-  metadataBase: new URL('https://kedai-om-jhon-pjd98ag2e-lalosianturi21s-projects.vercel.app'),
+  metadataBase: new URL('https://kedai-om-jhon-ucgd.vercel.app'),
 }
 
 module.exports = nextConfig
