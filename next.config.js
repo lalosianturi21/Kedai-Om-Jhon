@@ -9,7 +9,7 @@ const nextConfig = {
       },
     ],
   },
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://kedai-om-jhon-pjd98ag2e-lalosianturi21s-projects.vercel.app'),
 }
 
 module.exports = nextConfig
