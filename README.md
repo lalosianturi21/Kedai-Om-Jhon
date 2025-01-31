@@ -1,5 +1,3 @@
-# 📌 Project Title
-
 # 📌 Kedai Om Jhon
 
 Kedai Om Jhon adalah sebuah website yang menyediakan informasi lengkap mengenai menu terbaru dari Kedai Om Jhon. Website ini dirancang untuk memberikan pengalaman pengguna yang mudah dan nyaman dalam menjelajahi berbagai pilihan makanan dan minuman yang tersedia dan melakukan pembayaran secara online .
