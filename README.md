@@ -7,7 +7,7 @@ Kedai Om Jhon adalah sebuah website yang menyediakan informasi lengkap mengenai 
 ---
 
 ## 📷 Preview
-![image](https://github.com/user-attachments/assets/ee539cb3-4e0d-4627-95ae-ec2f7310590c)
+![image](https://github.com/user-attachments/assets/156502be-72fe-4c8a-80e2-ef758b0af8da)
 
 
 ---
