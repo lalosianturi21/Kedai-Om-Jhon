@@ -9,12 +9,13 @@ import {
   NavigationMenuTrigger
 } from '../ui/NavigationMenu';
 import { ListItem } from './ListItem';
+import Image from 'next/image';
 
 const DesktopNav = () => {
   return (
     <div className='hidden lg:flex gap-x-8 items-center p-4 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl shadow-lg'>
       <Link href='/' className='flex items-center space-x-2'>
-        <img src='/images/logo.png' alt='Logo' className='h-12 w-12 transition-transform duration-200 hover:scale-110' />
+        <Image src="/images/logo.png" alt='Logo' className="h-12 w-12 transition-transform duration-200 hover:scale-110"/>
         <span className='hidden font-bold text-white text-lg lg:inline-block transition-colors duration-200 hover:text-yellow-400'>Kedai Om Jhon</span>
         <span className='sr-only'>Home</span>
       </Link>
@@ -27,7 +28,7 @@ const DesktopNav = () => {
                 <li className='row-span-3'>
                   <NavigationMenuLink asChild>
                     <Link href='' className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-blue-500 to-blue-600 p-6 no-underline outline-none focus:ring-2 ring-yellow-400 transition-all'>
-                      <img src='images/logo.png' alt='Logo' className='h-12 w-12 text-white' />
+                      <Image src='images/logo.png' alt='Logo' className='h-12 w-12 text-white' />
                       <div className='mt-4 text-xl font-medium text-white'>Kedai Om Jhon</div>
                       <p className='text-sm text-white/80 mt-2'>An open source ecommerce skateshop built with everything new in Next.js</p>
                     </Link>

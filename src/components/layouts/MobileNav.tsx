@@ -3,6 +3,7 @@
 import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 import {
   Accordion,
@@ -32,7 +33,7 @@ const MobileNav = () => {
               className='flex items-center gap-3 text-primary-foreground hover:text-primary transition-colors duration-200'
               onClick={() => setIsOpen(false)}
             >
-              <img
+              <Image
                 src='/images/logo.png'
                 alt='Logo'
                 className='h-10 w-10 rounded-full transition-transform duration-200 hover:scale-110'
