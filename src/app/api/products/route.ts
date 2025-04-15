@@ -1,9 +1,6 @@
 import prisma from '@/lib/db'
 import { z } from 'zod'
 
-// ✅ Tambahkan ini biar Next.js gak error karena dynamic usage
-export const dynamic = 'force-dynamic';
-
 export async function GET(req: Request) {
   try {
     const url = new URL(req.url)
@@ -22,8 +19,8 @@ export async function GET(req: Request) {
 
     let result
 
-    if (category !== 'null') {
-      result = await prisma.product.findMany({
+    if (category != 'null') {
+      const products = await prisma.product.findMany({
         where: {
           categoryId: category,
         },
@@ -36,8 +33,10 @@ export async function GET(req: Request) {
           Category: true,
         },
       })
+
+      result = products
     } else {
-      result = await prisma.product.findMany({
+      const products = await prisma.product.findMany({
         take: parseInt(limit),
         skip: (parseInt(page) - 1) * parseInt(limit),
         orderBy: {
@@ -47,15 +46,17 @@ export async function GET(req: Request) {
           Category: true,
         },
       })
-    }
 
+      result = products
+    }
+    
     return Response.json(result)
   } catch (error) {
     if (error instanceof z.ZodError) {
       return new Response('Invalid request data passed', { status: 422 })
     }
 
-    console.error(error)
+    console.log(error)
 
     return new Response('Could not fetch more posts', { status: 500 })
   }
